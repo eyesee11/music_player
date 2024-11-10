@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="shortcut icon" href="./assests/imgs/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assests/style.css">
+    <script defer src="./assests/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Mini Music Player</h1>
+        <div class="music-player">
+            <nav>
+                <div class="song-index">
+                <!--    <img src="./assests/imgs/svgs/angle-left.svg" alt="left angle">  -->
+                </div>
+                <div class="circle has-dropdown" onclick="selectLang()">
+                    <img src="./assests/imgs/svgs/bars.svg" alt="bar">
+                    <ul class="drop-down">
+                        <li class="item hin">Hindi</li>
+                        <li class="item eng">English</li>
+                        <li class="item mar">Marathi</li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="artistImg">
+                <img src="" class="song-img" alt="song">
+            </div>
+            <div class="details">
+                <div class="track-name">Track Name</div>
+                <div class="track-artist">Track Artist</div>
+            </div>
+
+            <audio controls id="player" controlsList="nodownload noplaybackrate">
+                <source src="" type="audio/mpeg">
+            </audio>
+
+            <div class="controls">
+                <div class="icon"  onclick="prevTrack()">
+                    <img src="./assests/imgs/svgs/backward.svg" alt="backward" class="firstChild">
+                </div>
+                <div class="icon"  onclick="playPauseTrack()">
+                        <img src="./assests/imgs/svgs/play.svg" alt="play" id="secondImg">
+                </div>
+                <div class="icon" onclick="nextTrack()">
+                    <img src="./assests/imgs/svgs/forward.svg" alt="forward">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
